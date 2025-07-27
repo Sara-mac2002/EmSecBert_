@@ -1,0 +1,73 @@
+Loading MITRE ICS training data...
+Loaded 654 training examples from MITRE ICS
+Loading MITRE Enterprise training data...
+Loaded 833 training examples from MITRE Enterprise
+Loading Paper Report training data...
+Loaded 86 training examples from Paper Report
+Combined training examples: 1573
+Loading validation data...
+Combined validation examples: 336
+Loading test data...
+Combined test examples: 384
+***** Training Configuration *****
+  Num examples = 1573
+  Batch size = 16
+  Num steps = 983
+  Labels = ['X', '[CLS]', '[SEP]', 'O', 'B-TARGET_ASSET', 'I-TARGET_ASSET', 'B-PRECON', 'I-PRECON', 'B-MITIGATION', 'I-MITIGATION']
+Using device: cuda:0
+Starting training...
+--------------------------------------------------------------
+Epoch:0 completed, Total training Loss: 929330.9404, Time: 0.21m
+Epoch:0, Acc:83.00, Precision: 53.13, Recall: 49.40, F1: 51.20 on Valid_set, Time:0.015 min
+--------------------------------------------------------------
+New best model saved with F1: 0.5120
+--------------------------------------------------------------
+Epoch:1 completed, Total training Loss: 921412.0303, Time: 0.20m
+Epoch:1, Acc:90.37, Precision: 73.18, Recall: 63.90, F1: 68.23 on Valid_set, Time:0.015 min
+--------------------------------------------------------------
+New best model saved with F1: 0.6823
+--------------------------------------------------------------
+Epoch:2 completed, Total training Loss: 923212.4238, Time: 0.19m
+Epoch:2, Acc:93.17, Precision: 78.93, Recall: 79.12, F1: 79.03 on Valid_set, Time:0.015 min
+--------------------------------------------------------------
+New best model saved with F1: 0.7903
+--------------------------------------------------------------
+Epoch:3 completed, Total training Loss: 922169.5591, Time: 0.20m
+Epoch:3, Acc:94.37, Precision: 86.98, Recall: 79.28, F1: 82.95 on Valid_set, Time:0.018 min
+--------------------------------------------------------------
+New best model saved with F1: 0.8295
+--------------------------------------------------------------
+Epoch:4 completed, Total training Loss: 922491.7275, Time: 0.19m
+Epoch:4, Acc:95.59, Precision: 88.21, Recall: 84.06, F1: 86.09 on Valid_set, Time:0.015 min
+--------------------------------------------------------------
+New best model saved with F1: 0.8609
+--------------------------------------------------------------
+Epoch:5 completed, Total training Loss: 922884.1929, Time: 0.20m
+Epoch:5, Acc:95.28, Precision: 84.05, Recall: 89.00, F1: 86.46 on Valid_set, Time:0.015 min
+--------------------------------------------------------------
+New best model saved with F1: 0.8646
+--------------------------------------------------------------
+Epoch:6 completed, Total training Loss: 922107.3428, Time: 0.20m
+Epoch:6, Acc:95.66, Precision: 87.68, Recall: 86.22, F1: 86.94 on Valid_set, Time:0.014 min
+--------------------------------------------------------------
+New best model saved with F1: 0.8694
+--------------------------------------------------------------
+Epoch:7 completed, Total training Loss: 920105.7749, Time: 0.20m
+Epoch:7, Acc:95.91, Precision: 87.92, Recall: 87.01, F1: 87.46 on Valid_set, Time:0.016 min
+--------------------------------------------------------------
+New best model saved with F1: 0.8746
+--------------------------------------------------------------
+Epoch:8 completed, Total training Loss: 920643.8188, Time: 0.19m
+Epoch:8, Acc:96.12, Precision: 87.92, Recall: 88.13, F1: 88.02 on Valid_set, Time:0.017 min
+--------------------------------------------------------------
+New best model saved with F1: 0.8802
+--------------------------------------------------------------
+Epoch:9 completed, Total training Loss: 921108.5229, Time: 0.19m
+Epoch:9, Acc:96.29, Precision: 88.92, Recall: 88.29, F1: 88.60 on Valid_set, Time:0.015 min
+--------------------------------------------------------------
+New best model saved with F1: 0.8860
+Final evaluation on test set:
+Example No.106 is too long, length is 323, truncated to 256!
+Epoch:9, Acc:94.70, Precision: 83.32, Recall: 84.11, F1: 83.72 on Test_set, Time:0.024 min
+--------------------------------------------------------------
+Training completed!
