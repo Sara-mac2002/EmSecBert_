@@ -1,5 +1,5 @@
 # EMsecBERT: A Fine-tuned BERT-based LLM for Automated Cybersecurity Threat Analysis of Electric Mobility
-This repository provides the first open-source fine-tuned BERT-based Large Language Model specifically designed for automated cybersecurity threat analysis in electric mobility infrastructure. This work presents a complete methodology from dataset creation to model deployment for Named Entity Recognition in cybersecurity threat descriptions.
+This repository provides the first open-source fine-tuned BERT-based Large Language Model specifically designed for automated cybersecurity threat analysis in electric mobility infrastructure.
 ## Overview
 Electric mobility infrastructure integrates information and communication technologies to enhance operational efficiency, but this integration also introduces significant cybersecurity vulnerabilities. This research addresses the challenge through:
 - **Dataset Construction** : Semi-automated creation of annotated cybersecurity datasets
@@ -76,6 +76,7 @@ print(f"Preconditions: {entities.get('PRECON', [])}")
 
 ### Dataset Structure
 Training Data Organization
+```
 Automated_Extraction/Datasets/
 ├── Mitre_ENTREPRISE/           # Enterprise IT threats (63 entries)
 │   ├── train.txt              # Training split (70%)
@@ -92,7 +93,7 @@ Automated_Extraction/Datasets/
     ├── valid.txt              # Validation split
     └── test.txt               # Test split
     └── BIO.txt                # Complete BIO-tagged dataset
-
+```
 ### Dataset Statistics
 * Total Entries: 176 threat scenarios
 * Total Tokens: 49,726 labeled tokens
@@ -143,6 +144,7 @@ for framework, data in both_data.items():
 ```
 
 ## Project Structure
+```
 EMsecBERT/
 ├── Automated_Extraction/           # Core research implementation
 │   ├── Datasets/                   # Training datasets (176 entries, 49,726 tokens)
@@ -160,7 +162,7 @@ EMsecBERT/
    ├── requirements.txt            # Dependencies
    ├── setup.py                   # Package setup
    └── README.md                  # This file
-
+```
 
 Requirements
 * Python 3.8+
