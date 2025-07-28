@@ -34,6 +34,12 @@ ics_data = collector.collect_mitre_ics_data()
 
 # Collect Enterprise data
 enterprise_data = collector.collect_mitre_enterprise_data()
+
+# Collect both frameworks
+both_data = {
+    'ics': collector.collect_mitre_ics_data(),
+    'enterprise': collector.collect_mitre_enterprise_data()
+}
 ```
 
 ### 2. Extract Entities with EMsecBERT
