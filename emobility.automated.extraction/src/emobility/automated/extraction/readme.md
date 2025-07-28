@@ -52,8 +52,16 @@ extractor = EMsecBERTExtractor(
     model_checkpoint_path="your_project_directory_path/Automated_Extraction/model/CySecBert_crf_checkpoint.pt"
 )
 
-# Process MITRE data and extract entities
-results = extractor.process_mitre_data(ics_data, "ICS_Extracted_Entities")
+# Process ICS data and extract entities
+ics_results = extractor.process_mitre_data(ics_data, "ICS_Extracted_Entities")
+
+# Process Enterprise data and extract entities
+enterprise_results = extractor.process_mitre_data(enterprise_data, "Enterprise_Extracted_Entities")
+
+# Process both datasets
+for framework, data in both_data.items():
+    results = extractor.process_mitre_data(data, f"{framework.upper()}_Extracted_Entities")
+    print(f"Processed {len(results)} entries for {framework}")
 ```
 
 ## Command Line Usage
